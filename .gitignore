@@ -1,0 +1,5 @@
+/vendor
+/nbproject
+composer.lock
+config.php
+docker-compose.yml
