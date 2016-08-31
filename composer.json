@@ -1,0 +1,18 @@
+{
+    "name": "cs-mail-service",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "1.*",
+        "php-amqplib/php-amqplib": "2.6.*",
+        "swarrot/swarrot": "^2.2",
+        "league/plates": "^3.1",
+        "swiftmailer/swiftmailer": "^5.4",
+        "symfony/yaml": "^3.1",
+        "league/uri": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "CS\\MailService\\": "src"
+        }
+    }
+}

@@ -1,0 +1,237 @@
+---
+name: pumpic
+locales:
+    - en
+defaultLocale: en
+defaultAnalyticsParams:
+    source: newsletter
+    medium: email
+templates:
+    FAQ_pumpic:
+        sender: noreply@pumpic.com
+        subject:
+            en: FAQ Request
+        analyticsCampaign: faq
+    OpenigSoonThanks_pumpic:
+        sender: support@pumpic.com
+        subject:
+            en: New Monitoring App Is Coming Soon
+        analyticsCampaign: openig-soon-thanks
+    lostPassword:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Password Reset Request
+        analyticsCampaign: reset-password
+    newDeviceAdded:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: New Device Added
+        analyticsCampaign: new-device
+    registrationSuccessWithPassword:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Welcome
+        analyticsCampaign: welcome
+    simCardChanged:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: SIM Card Change Notification
+        analyticsCampaign: sim
+    unlockPassword:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Your Account Was Locked
+        analyticsCampaign: locked
+    freeTrialWelcome:
+        sender: support@pumpic.com
+        subject:
+            en: Thank you for choosing Pumpic!
+        analyticsCampaign: free-trial-welcome
+    freeTrialExpiresSoon:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Your Trial Expires Soon
+        analyticsCampaign: free-trial-expires-soon
+    freeTrialHasExpired:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Your Trial Has Expired
+        analyticsCampaign: free-trial-has-expired
+    newPurchase:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Order confirmation
+        analyticsCampaign: purchase
+    popUp_email:
+        sender: support@pumpic.com
+        subject:
+            en: Discount request from Pumpic.com
+        analyticsCampaign: popup-email
+    IcloudNewDataUploaded:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: 'iCloud Monitoring: data updated'
+        analyticsCampaign: icloud-new-data-uploaded
+    IcloudAuthorizationError:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: 'iCloud Monitoring: iCloud authorization error'
+        analyticsCampaign: icloud-authorization-error
+    IcloudNewDataUploadError:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: 'iCloud Monitoring: synchronization error'
+        analyticsCampaign: icloud-new-data-upload-error
+    ICloudTwoStepVerificationError:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: 'iCloud Monitoring: iCloud two step verification error'
+        analyticsCampaign: icloud-2-step-verification-error
+    OrderCancelled:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Order Cancelled
+        analyticsCampaign: order-cancelled
+    NotReceivedAfterPurchaseOrTrial:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Do you need any help with Pumpic?
+        analyticsCampaign: need-any-help-with-pumpic
+    limitEndCalls:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Call Monitoring Limit Reached
+        analyticsCampaign: calls-limit-reached
+    limitEndSms:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: SMS Monitoring Limit Reached
+        analyticsCampaign: sms-limit-reached
+    systemSupportTicket:
+        subject:
+            en:
+                - 'Ticket # T%s - %s'
+                - [id, email]
+    supportTicketUser:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject: 
+            en:
+                - 'Customer support ticket # T%s received'
+                - [id]
+        analyticsCampaign: cp-form
+    geoFenceEnter:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject: 
+            en:
+                - 'Pumpic Alert: %s entered %s at %s'
+                - [name, zone, zoneTimeSubject]
+        analyticsCampaign: geofence-enter
+    geoFenceLeave:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject: 
+            en:
+                - 'Pumpic Alert: %s left %s at %s'
+                - [name, zone, zoneTimeSubject]
+        analyticsCampaign: geofence-leave
+    activateKeylogger:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject: 
+            en:
+                - 'Pumpic Alert: %s has been turned off on the target device'
+                - [title]
+        analyticsCampaign: keylogger-off
+    activateLocation:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject: 
+            en:
+                - 'Pumpic Alert: %s has been turned off on the target device'
+                - [title]
+        analyticsCampaign: location-off
+    contactUs_pumpic_sendUser:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject: 
+            en:
+                - 'Contact form # W%s received'
+                - [uid]
+        analyticsCampaign: contact-form
+    contactUs_pumpic:
+        subject: 
+            en:
+                - 'Website request # W%s - %s'
+                - [uid, email]
+    Compatibility_pumpic_sendUser:
+        sender: support@pumpic.com
+        subject: 
+            en:
+                - 'Compatibility request # C%s received'
+                - [uid]
+        analyticsCampaign: compatibility-form
+    Compatibility_pumpic:
+        sender: noreply@pumpic.com
+        senderName: Pumpic.com
+        subject: 
+            en:
+                - 'Compatibility request # C%s - %s'
+                - [uid, email]
+    Mobile_operators_pumpic_sendUser:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject: 
+            en:
+                - 'Carrier request # M%s received'
+                - [uid]
+        analyticsCampaign: mobile-operators-form
+    Mobile_operators_pumpic:
+        subject: 
+            en:
+                - 'Carrier request # M%s - %s'
+                - [uid, email]
+    FAQ_monitorphones_sendUser:
+        subject: 
+            en:
+                - 'Contact form # W%s received'
+                - [uid]
+        analyticsCampaign: FAQ_monitorphones_sendUser
+    FAQ_monitorphones:
+        subject: 
+            en:
+                - 'Monitorphones request # W%s - %s'
+                - [uid, email]
+    CP_ConfirmCancellationLicence:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject: 
+            en:
+                - '%s - Feedback on auto-renewal cancellation'
+                - [email]
+templatesVariables:
+    style:
+        paragraph: 'border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 15px 0px; vertical-align: baseline;'
+        strong: 'border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: 700; line-height: normal; margin: 0; padding: 0; vertical-align: baseline;'
+        buttonWrapper: 'border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; text-align: center; vertical-align: baseline;'
+        button: '-moz-border-radius: 5px; -webkit-border-radius: 5px; background: #16a89e; border-radius: 5px; border: 0; color: #fff; display: inline-block; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 10px 29px; text-decoration: none; vertical-align: baseline;'
+        firstHeading: 'border: 0; font-size: 29px; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0px 15px 15px; text-align: center; vertical-align: baseline;'
+        textLink: 'border: 0; color: #16a89e; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; text-decoration: none; vertical-align: baseline;'
+        colorText: 'border: 0; color: #16a89e; font-size: normal; font-style: normal; font-variant: normal; font-weight: bold; line-height: normal; margin: 0; padding: 0; vertical-align: baseline;'
