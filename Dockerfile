@@ -14,6 +14,8 @@ ADD docker/php.ini /usr/local/etc/php
 COPY . /code
 COPY ./config.production.php /code/config.php
 
+RUN rm -rf /code/.git
+
 WORKDIR /code
 
 ENTRYPOINT ["php", "index.php"]
