@@ -5,6 +5,11 @@ require 'vendor/autoload.php';
 $config = require 'config.php';
 
 $logger = new \Monolog\Logger("log");
+
+if (isset($argv[0])) {
+    $logger->pushHandler(new \Monolog\Handler\StreamHandler($argv[0]));
+}
+
 $logger->pushHandler(new \Monolog\Handler\ErrorLogHandler());
 
 $connection = new PhpAmqpLib\Connection\AMQPConnection($config['queue']['host'], $config['queue']['port'], $config['queue']['user'], $config['queue']['password']);
