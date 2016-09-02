@@ -79,7 +79,7 @@ class Processor implements ProcessorInterface {
         try {
             $mail = new Mail($request, $templateEngine);
             $mail->send($this->mailer);
-            $this->logger->addInfo("Mail '{$type}' sended");
+            $this->logger->addInfo("Mail '{$type}' sended", ['data' => $data]);
         } catch (\Exception $e) {
             $message = $this->getExceptionMessageForLogging($e);
             $this->logger->addWarning($message);

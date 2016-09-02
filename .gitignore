@@ -1,5 +1,5 @@
 /vendor
-/log
+/logs
 /nbproject
 composer.lock
 config.php

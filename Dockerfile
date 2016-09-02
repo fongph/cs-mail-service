@@ -1,4 +1,4 @@
-FROM php:5.5-cli
+FROM php:7.0-cli
 # in 5.6 problem with ssl connection
 
 RUN apt-get update && apt-get install -y \
