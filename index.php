@@ -12,19 +12,14 @@ $logger->pushHandler(new \Monolog\Handler\ErrorLogHandler());
 $connection = new PhpAmqpLib\Connection\AMQPConnection($config['queue']['host'], $config['queue']['port'], $config['queue']['user'], $config['queue']['password']);
 $queueChannel = $connection->channel();
 
-$https['ssl']['verify_peer'] = FALSE;
-$https['ssl']['verify_peer_name'] = FALSE;
+$options['ssl']['verify_peer'] = false;
+$options['ssl']['verify_peer_name'] = false;
 
 $transport = new Swift_SmtpTransport($config['smtp']['host'], $config['smtp']['port'], $config['smtp']['security']);
 
 $transport->setUsername($config['smtp']['user'])
         ->setPassword($config['smtp']['password'])
-        ->setStreamOptions([
-            'ssl' => [
-                'verify_peer' => false,
-                'verify_peer_name' => false
-            ]
-        ]);
+        ->setStreamOptions($options);
 
 $mailer = Swift_Mailer::newInstance($transport);
 
