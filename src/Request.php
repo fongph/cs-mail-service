@@ -48,7 +48,7 @@ class Request {
          * @todo remove support@pumpic.com hack
          */
         if (isset($data['email'])) {
-            $$this->sender = $data['email'];
+            $this->sender = $data['email'];
 
             if ($this->sender == 'support@pumpic.com') {
                 $this->sender = ['support@pumpic.com' => 'Pumpic.com'];
