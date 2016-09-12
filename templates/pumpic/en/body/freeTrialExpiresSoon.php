@@ -1,4 +1,4 @@
-<?php $this->layout('layout/default', ['title' => $title, 'style' => $style]) ?>
+<?php $this->layout('layout/default', ['title' => $title, 'style' => $style, 'group' => $group]) ?>
 
 <?php $this->start('page') ?>
 <h1 style="<?= $style['firstHeading'] ?>" align="center">Your Trial Expires Soon</h1>

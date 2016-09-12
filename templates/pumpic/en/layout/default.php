@@ -72,21 +72,33 @@
                 </a>
             </div>
 
-        <div id="content" style="border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 30px 40px 0px; vertical-align: baseline">
-            <?=$this->section('page')?>
-        </div>
+            <div id="content" style="border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 30px 40px 0px; vertical-align: baseline">
+                <?= $this->section('page') ?>
+            </div>
 
-        <div id="footer" style="border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 15px 40px; vertical-align: baseline">
-        <?php if ($this->section('footer')): ?>
-            <?=$this->section('footer')?>
-        <?php else: ?>
-            Best Regards,<br>
-            <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
-            Pumpic.com</a><br>
-            Support Team<br>
-            <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
-        <?php endif ?>
-        </div>
+            <div id="footer" style="border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 15px 40px; vertical-align: baseline">
+                <?php if ($this->section('footer')): ?>
+                    <?= $this->section('footer') ?>
+                <?php else: ?>
+                    Best Regards,<br>
+                    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
+                        Pumpic.com</a><br>
+                    Support Team<br>
+                    <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
+                <?php endif ?>
+            </div>
+
+            <?php if (isset($group)): ?>
+                <?php if ($group == 'system'): ?>
+                    <div style="border: 0; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0 40px 15px 40px; vertical-align: baseline; text-align: center; color: #a3a3a3;">
+                        If you’d no longer like to receive account status emails from Pumpic, please <a style="border: 0; color: #a3a3a3; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; text-decoration: underline; vertical-align: baseline;" href="http://cp.pumpic.com/profile/unsubscribe/system" target="_blank">unsubscribe</a>.
+                    </div>
+                <?php elseif ($group == 'monitoring'): ?>
+                    <div style="border: 0; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0 40px 15px 40px; vertical-align: baseline; text-align: center; color: #a3a3a3;">
+                        If you’d no longer like to receive monitoring notification emails from Pumpic, please <a style="border: 0; color: #a3a3a3; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; text-decoration: underline; vertical-align: baseline;" href="http://cp.pumpic.com/profile/unsubscribe/monitoring" target="_blank">unsubscribe</a>.
+                    </div>
+                <?php endif; ?>
+            <?php endif; ?>
         </div>
     </body>
 </html>

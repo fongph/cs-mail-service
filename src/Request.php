@@ -11,11 +11,14 @@ class Request {
 
     private $locale;
     private $site;
+    private $user;
     private $subject;
     private $data;
     private $sender;
+    private $group;
     private $analyticsParams = [];
     private $templateVariables = [];
+    private $registerLead = true;
 
     public function __construct($data, $siteSettings)
     {
@@ -43,6 +46,10 @@ class Request {
             $this->subject = $this->generateSubject($templateSettings['subject'][$this->locale]);
         }
 
+        if (isset($data['user_id'])) {
+            $this->user = $data['user_id'];
+        }
+
         /**
          * @todo read this configuration from local config (not from request) 
          * @todo remove support@pumpic.com hack
@@ -67,6 +74,10 @@ class Request {
             $this->analyticsParams = $siteSettings['defaultAnalyticsParams'];
         }
 
+        if (isset($templateSettings['registerLead'])) {
+            $this->registerLead = $templateSettings['registerLead'];
+        }
+
         if (isset($templateSettings['analyticsCampaign'])) {
             $this->analyticsParams['campaign'] = $templateSettings['analyticsCampaign'];
         }
@@ -75,9 +86,14 @@ class Request {
             $this->templateVariables = $siteSettings['templatesVariables'];
         }
 
+        if (isset($templateSettings['group'])) {
+            $this->group = $templateSettings['group'];
+        }
+
         $this->templateVariables = array_merge($this->templateVariables, [
             'params' => $data['params'],
-            'title' => $this->subject
+            'title' => $this->subject,
+            'group' => $this->group
         ]);
     }
 
@@ -140,6 +156,16 @@ class Request {
         return $this->site;
     }
 
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    public function getGroup()
+    {
+        return $this->group;
+    }
+
     public function getAnalyticsParams()
     {
         return $this->analyticsParams;
@@ -148,6 +174,11 @@ class Request {
     public function getTemplateVariables()
     {
         return $this->templateVariables;
+    }
+
+    public function registerLead()
+    {
+        return $this->registerLead;
     }
 
     private function generateSubject($subject, $params = [])

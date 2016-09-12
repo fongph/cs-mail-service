@@ -26,6 +26,7 @@ templates:
     newDeviceAdded:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: system
         subject:
             en: New Device Added
         analyticsCampaign: new-device
@@ -38,12 +39,14 @@ templates:
     simCardChanged:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: monitoring
         subject:
             en: SIM Card Change Notification
         analyticsCampaign: sim
     unlockPassword:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: system
         subject:
             en: Your Account Was Locked
         analyticsCampaign: locked
@@ -55,12 +58,14 @@ templates:
     freeTrialExpiresSoon:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: system
         subject:
             en: Your Trial Expires Soon
         analyticsCampaign: free-trial-expires-soon
     freeTrialHasExpired:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: system
         subject:
             en: Your Trial Has Expired
         analyticsCampaign: free-trial-has-expired
@@ -78,52 +83,61 @@ templates:
     IcloudNewDataUploaded:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: monitoring
         subject:
             en: 'iCloud Monitoring: data updated'
         analyticsCampaign: icloud-new-data-uploaded
     IcloudAuthorizationError:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: monitoring
         subject:
             en: 'iCloud Monitoring: iCloud authorization error'
         analyticsCampaign: icloud-authorization-error
     IcloudNewDataUploadError:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: monitoring
         subject:
             en: 'iCloud Monitoring: synchronization error'
         analyticsCampaign: icloud-new-data-upload-error
     ICloudTwoStepVerificationError:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: monitoring
         subject:
             en: 'iCloud Monitoring: iCloud two step verification error'
         analyticsCampaign: icloud-2-step-verification-error
     OrderCancelled:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: system
         subject:
             en: Order Cancelled
         analyticsCampaign: order-cancelled
     NotReceivedAfterPurchaseOrTrial:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: system
         subject:
             en: Do you need any help with Pumpic?
         analyticsCampaign: need-any-help-with-pumpic
     limitEndCalls:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: system
         subject:
             en: Call Monitoring Limit Reached
         analyticsCampaign: calls-limit-reached
     limitEndSms:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: system
         subject:
             en: SMS Monitoring Limit Reached
         analyticsCampaign: sms-limit-reached
     systemSupportTicket:
+        registerLead: false
         subject:
             en:
                 - 'Ticket # T%s - %s'
@@ -139,6 +153,7 @@ templates:
     geoFenceEnter:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: monitoring
         subject: 
             en:
                 - 'Pumpic Alert: %s entered %s at %s'
@@ -147,6 +162,7 @@ templates:
     geoFenceLeave:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: monitoring
         subject: 
             en:
                 - 'Pumpic Alert: %s left %s at %s'
@@ -155,6 +171,7 @@ templates:
     activateKeylogger:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: monitoring
         subject: 
             en:
                 - 'Pumpic Alert: %s has been turned off on the target device'
@@ -163,6 +180,7 @@ templates:
     activateLocation:
         sender: support@pumpic.com
         senderName: Pumpic.com
+        group: monitoring
         subject: 
             en:
                 - 'Pumpic Alert: %s has been turned off on the target device'
@@ -177,6 +195,7 @@ templates:
                 - [uid]
         analyticsCampaign: contact-form
     contactUs_pumpic:
+        registerLead: false
         subject: 
             en:
                 - 'Website request # W%s - %s'
@@ -191,6 +210,7 @@ templates:
     Compatibility_pumpic:
         sender: noreply@pumpic.com
         senderName: Pumpic.com
+        registerLead: false
         subject: 
             en:
                 - 'Compatibility request # C%s - %s'
@@ -204,6 +224,7 @@ templates:
                 - [uid]
         analyticsCampaign: mobile-operators-form
     Mobile_operators_pumpic:
+        registerLead: false
         subject: 
             en:
                 - 'Carrier request # M%s - %s'

@@ -19,7 +19,7 @@ class Mail {
     private $message;
 
     public function __construct(Request $request, TemplateEngine $templateEngine)
-    {
+    {   
         $body = $templateEngine->render(
                 $request->getMessageType(), $request->getTemplateVariables(), $request->getAnalyticsParams()
         );

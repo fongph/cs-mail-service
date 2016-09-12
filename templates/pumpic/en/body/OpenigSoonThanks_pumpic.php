@@ -1,4 +1,4 @@
-<?php $this->layout('layout/default', ['title' => $title, 'style' => $style]) ?>
+<?php $this->layout('layout/default', ['title' => $title, 'style' => $style, 'group' => $group]) ?>
 
 <?php $this->start('page') ?>
 <h1 class="title" style="<?= $style['firstHeading'] ?>">Greetings!</h1>

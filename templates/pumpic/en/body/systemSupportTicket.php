@@ -1,4 +1,4 @@
-<?php $this->layout('layout/default', ['title' => $title, 'style' => $style]) ?>
+<?php $this->layout('layout/default', ['title' => $title, 'style' => $style, 'group' => $group]) ?>
 
 <?php $this->start('page') ?>
 <p style="<?= $style['paragraph'] ?>">
@@ -15,7 +15,7 @@
     <?php endif; ?>
 
     <?php if (isset($params['message'])): ?>
-        <b class="green" style="<?= $style['message'] ?>">Description:</b> <?= $params['message'] ?>
+        <b class="green" style="<?= $style['colorText'] ?>">Description:</b> <?= $params['message'] ?>
     <?php endif; ?>
 </p>
 
