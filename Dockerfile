@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     libicu-dev \
     && docker-php-ext-configure intl \
-    && docker-php-ext-install -j$(nproc) intl curl bcmath \
+    && docker-php-ext-install -j$(nproc) intl curl bcmath pdo pdo_mysql pcntl \
     && rm -r /var/lib/apt/lists/*
 
 ADD docker/php.ini /usr/local/etc/php

@@ -30,7 +30,7 @@ CS\MailService\ErrorToExceptionConverter::init();
 
 $stack = new \Swarrot\Processor\Stack\Builder();
 
-$stack//->push('Swarrot\Processor\SignalHandler\SignalHandlerProcessor', $logger)
+$stack->push('Swarrot\Processor\SignalHandler\SignalHandlerProcessor', $logger)
         ->push('Swarrot\Processor\MaxMessages\MaxMessagesProcessor', $logger)
         ->push('Swarrot\Processor\ExceptionCatcher\ExceptionCatcherProcessor', $logger)
         ->push('CS\MailService\MessageDebugProcessor', $logger)
