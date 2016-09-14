@@ -137,6 +137,8 @@ templates:
             en: SMS Monitoring Limit Reached
         analyticsCampaign: sms-limit-reached
     systemSupportTicket:
+        sender: noreply@pumpic.com
+        senderName: Pumpic.com
         registerLead: false
         subject:
             en:
