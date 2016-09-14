@@ -50,17 +50,7 @@ class Request {
             $this->user = $data['user_id'];
         }
 
-        /**
-         * @todo read this configuration from local config (not from request) 
-         * @todo remove support@pumpic.com hack
-         */
-        if (isset($data['email'])) {
-            $this->sender = $data['email'];
-
-            if ($this->sender == 'support@pumpic.com') {
-                $this->sender = ['support@pumpic.com' => 'Pumpic.com'];
-            }
-        } elseif (isset($templateSettings['sender'])) {
+        if (isset($templateSettings['sender'])) {
             if (isset($templateSettings['senderName'])) {
                 $this->sender = [$templateSettings['sender'] => $templateSettings['senderName']];
             } else {
