@@ -1,6 +1,5 @@
 /vendor
 /logs
 /nbproject
-composer.lock
 config.php
 docker-compose.yml

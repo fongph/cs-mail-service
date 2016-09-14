@@ -37,8 +37,10 @@ class Mail {
 
     public function send(Swift_Mailer $mailer)
     {
-        $mailer->send($this->message);
+        $result = $mailer->send($this->message);
         $mailer->getTransport()->stop();
+        
+        return $result;
     }
 
 }
