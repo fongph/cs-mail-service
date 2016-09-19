@@ -11,7 +11,7 @@
     <?php endif; ?>
        
     <?php if(isset($params['deviceModel'])): ?>
-    <b class="green" style="<?= $style['colorText'] ?>">Device Model:</b> <?= $params['deviceModel'] ?>
+    <b class="green" style="<?= $style['colorText'] ?>">Device Model:</b> <?= $params['deviceModel'] ?><br>
     <?php endif; ?>
 
     <?php if (isset($params['OSVersion']) && !empty($params['OSVersion'])): ?>
