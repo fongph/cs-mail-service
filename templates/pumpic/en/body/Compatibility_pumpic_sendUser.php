@@ -25,7 +25,7 @@ Our support representative will contact you as soon as possible. Please check th
     <b class="green" style="<?= $style['colorText'] ?>">Device Model:</b> <?= $params['deviceModel'] ?><br>
     <?php endif; ?>
 
-    <?php if (isset($params['OSVersion']) && !empty($params['OSVersion'])): ?>
+    <?php if (isset($params['OSVersion'])): ?>
     <b class="green" style="<?= $style['colorText'] ?>">OS Version:</b> <?= $params['OSVersion'] ?>
     <?php endif; ?>
 </p>
