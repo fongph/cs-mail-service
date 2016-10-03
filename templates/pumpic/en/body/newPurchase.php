@@ -13,13 +13,14 @@ if (isset($params['customerName'])) {
 <?php $this->layout('layout/default', ['title' => $title, 'style' => $style, 'group' => $group]) ?>
 
 <?php $this->start('page') ?>
-<p style="<?= $style['paragraph'] ?>">
-   <?php if ($_name): ?>
-        Dear <?= $_name ?>,
-    <?php else: ?>
-        Hello,
-    <?php endif; ?>
-    you have successfully submitted your payment for <?= $params['productName'] ?>.</p> 
+    <h1 style="<?= $style['firstHeading'] ?>" align="center">
+        <?php if (isset($params['name']) and ! empty($params['name'])): ?>
+            Dear <?= $params['name'] ?>,
+        <?php else: ?>
+            Dear customer,
+        <?php endif; ?>
+    </h1>
+    <p>You have successfully submitted your payment for <?= $params['productName'] ?>.</p>
 <p style="<?= $style['paragraph'] ?>">Your order ID number is <?= $params['orderId'] ?>.</p>
 
 <p style="<?= $style['paragraph'] ?>">Log into your <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('https://cp.pumpic.com/', ['term' => 'newPurchase']) ?>">control panel</a> to continue working with our service.</p> 

@@ -5,7 +5,7 @@
     <?php if(isset($params['name'])): ?>
         Dear <?= $params['name'] ?>,
     <?php else: ?>
-        Hello,
+        Dear customer,
     <?php endif; ?>
 </h1>
 <p style="<?= $style['paragraph'] ?>">The iCloud password of the target device seems to be invalid, which resulted in an authorization error. Please follow the link below to set a new password.</p>

@@ -7,7 +7,7 @@
    <?php if (isset($params['customerName'])): ?>
         Dear <?= $params['customerName'] ?>,
     <?php else: ?>
-        Hello,
+        Dear customer,
     <?php endif; ?>
 </p>
 

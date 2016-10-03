@@ -5,7 +5,7 @@
     <?php if (isset($params['name']) and ( !empty($params['name']) or trim($params['name']) != '')) { ?>
         Dear <?= $params['name'] ?>,
     <?php } else { ?>
-        Hello,
+        Dear customer,
     <?php } ?>
 </h1>
 

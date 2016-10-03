@@ -1,13 +1,13 @@
 <?php $this->layout('layout/default', ['title' => $title, 'style' => $style, 'group' => $group]) ?>
 
 <?php $this->start('page') ?>
-<p style="<?= $style['paragraph'] ?>">
+<h1 style="<?= $style['firstHeading'] ?>" align="center">
     <?php if (isset($params['name']) and ! empty($params['name'])): ?>
         Dear <?= $params['name'] ?>,
     <?php else: ?>
-        Hello,
+        Dear customer,
     <?php endif; ?>
-</p>
+</h1>
 
 <p style="<?= $style['paragraph'] ?>">
     Sorry, but it looks like Location Service has been turned off on the target device.<br /> 

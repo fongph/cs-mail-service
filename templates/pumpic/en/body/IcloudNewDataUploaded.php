@@ -5,7 +5,7 @@
     <?php if(isset($params['name'])): ?>
         Dear <?= $params['name'] ?>,
     <?php else: ?>
-        Hello,
+        Dear customer,
     <?php endif; ?>
 </h1>
 <p style="<?= $style['paragraph'] ?>">We have successfully uploaded the new data from the target device for <?= $params['date'] ?> to your Control Panel. Please log in to check the new data updates.</p>
