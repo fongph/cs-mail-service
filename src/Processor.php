@@ -69,9 +69,9 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
 
             $this->logMailToDatabase($request);
             $this->pushLead($request);
-            $this->sendEmail($request);
+            $result = $this->sendEmail($request);
 
-            $this->logger->addInfo("Message '{$type}' sended");
+            $this->logger->addInfo("Message '{$type}' sended", ['result' => $result]);
 
             $this->db->commit();
         } catch (\Throwable $e) {
@@ -95,7 +95,7 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
     {
         $templateEngine = new TemplateEngine($request->getSite(), $request->getLocale());
         $mail = new Mail($request, $templateEngine);
-        $mail->send($this->mailer);
+        return $mail->send($this->mailer);
     }
 
     private function mustSend(\CS\MailService\Request $request)

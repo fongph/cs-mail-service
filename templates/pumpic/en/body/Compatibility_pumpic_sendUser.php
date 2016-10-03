@@ -5,7 +5,7 @@
     <?php if (isset($params['name'])): ?>
         Dear <?= $params['name'] ?>,
     <?php else: ?>
-        Dear customer,
+        Hello,
     <?php endif; ?>
 </h1>
 <p style="<?= $style['paragraph'] ?>">
@@ -26,7 +26,7 @@ Our support representative will contact you as soon as possible. Please check th
     <?php endif; ?>
 
     <?php if (isset($params['OSVersion'])): ?>
-        <b class="green" style="<?= $style['colorText'] ?>">OS Version:</b> <?= $params['OSVersion'] ?>
+    <b class="green" style="<?= $style['colorText'] ?>">OS Version:</b> <?= $params['OSVersion'] ?>
     <?php endif; ?>
 </p>
 

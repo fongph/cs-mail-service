@@ -137,6 +137,8 @@ templates:
             en: SMS Monitoring Limit Reached
         analyticsCampaign: sms-limit-reached
     systemSupportTicket:
+        sender: noreply@pumpic.com
+        senderName: Pumpic.com
         registerLead: false
         subject:
             en:
@@ -195,6 +197,8 @@ templates:
                 - [uid]
         analyticsCampaign: contact-form
     contactUs_pumpic:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
         registerLead: false
         subject: 
             en:
@@ -224,18 +228,24 @@ templates:
                 - [uid]
         analyticsCampaign: mobile-operators-form
     Mobile_operators_pumpic:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
         registerLead: false
         subject: 
             en:
                 - 'Carrier request # M%s - %s'
                 - [uid, email]
     FAQ_monitorphones_sendUser:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
         subject: 
             en:
                 - 'Contact form # W%s received'
                 - [uid]
         analyticsCampaign: FAQ_monitorphones_sendUser
     FAQ_monitorphones:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
         subject: 
             en:
                 - 'Monitorphones request # W%s - %s'
