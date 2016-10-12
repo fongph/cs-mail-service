@@ -246,7 +246,8 @@ templates:
     FAQ_monitorphones:
         sender: support@pumpic.com
         senderName: Pumpic.com
-        subject: 
+        senderName: Pumpic.com
+        subject:
             en:
                 - 'Monitorphones request # W%s - %s'
                 - [uid, email]
@@ -257,6 +258,11 @@ templates:
             en:
                 - '%s - Feedback on auto-renewal cancellation'
                 - [email]
+    PumpicEmailToLimitlyUsers:
+            sender: margaret@pumpic.com
+            senderName: Margaret Berman
+            subject:
+                en: Want to know what exactly your kid does on his/her smartphone?
 templatesVariables:
     style:
         paragraph: 'border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 15px 0px; vertical-align: baseline;'

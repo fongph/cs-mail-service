@@ -1,7 +1,6 @@
 <?php $this->layout('layout/default', ['title' => $title, 'style' => $style, 'group' => $group]) ?>
 
 <?php $this->start('page') ?>
-<h1 style="<?= $style['firstHeading'] ?>" align="center">Want to know what exactly your kid does on his/her smartphone?</h1>
 <p style="<?= $style['paragraph'] ?>">Hello,</p>
 <p style="<?= $style['paragraph'] ?>">We thought you should know this:</p>
 <p style="<?= $style['strong'] ?>"><i>Having too much screen time increases the risk for children of being bullied, a study by the University of Montreal says.</i></p>
