@@ -97,3 +97,8 @@
     </a>
 </div>
 <?php $this->stop() ?>
+<?php $this->start('footer') ?>
+Best Regards,<br>
+Margaret Berman <br>
+Pumpic Product Owner<br>
+<?php $this->stop() ?>
