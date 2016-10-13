@@ -246,7 +246,6 @@ templates:
     FAQ_monitorphones:
         sender: support@pumpic.com
         senderName: Pumpic.com
-        senderName: Pumpic.com
         subject:
             en:
                 - 'Monitorphones request # W%s - %s'
