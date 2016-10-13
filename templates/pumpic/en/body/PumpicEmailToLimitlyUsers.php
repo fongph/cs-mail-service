@@ -100,5 +100,5 @@
 <?php $this->start('footer') ?>
 Best Regards,<br>
 Margaret Berman <br>
-Pumpic Product Owner<br>
+Pumpic Product Owner
 <?php $this->stop() ?>
