@@ -262,6 +262,12 @@ templates:
         senderName: Margaret Berman
         subject:
             en: Want to know what exactly your kid does on his/her smartphone?
+    PumpicPOWelcommeLetter:
+        sender: margaret@pumpic.com
+        senderName: Margaret Berman
+        group: system
+        subject:
+            en: How is your experience with Pumpic so far?
 templatesVariables:
     style:
         paragraph: 'border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 15px 0px; vertical-align: baseline;'
