@@ -49,7 +49,8 @@
 
 <?php $this->stop() ?>
 <?php $this->start('footer') ?>
-Regards,<br>
+Best regards,<br>
 Margaret Berman <br>
-Pumpic Product Owner
+Product Owner at Pumpic.com <br>
+margaret@pumpic.com
 <?php $this->stop() ?>
