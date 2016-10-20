@@ -44,7 +44,7 @@
 
 </ul>
 <p style="<?= $style['paragraph'] ?>">I’m asking because knowing those things is fundamental for ensuring that the product we deliver is exactly what you need. Plus, based on the feedback, we can keep improving Pumpic to enhance your satisfaction – we do believe that perfection knows no limits!</p>
-<p style="<?= $style['paragraph'] ?>">So, press “Reply” and let me know what you think. Thank you so much for your time!</p>.
+<p style="<?= $style['paragraph'] ?>">So, press “Reply” and let me know what you think. Thank you so much for your time!</p>
 
 
 <?php $this->stop() ?>
