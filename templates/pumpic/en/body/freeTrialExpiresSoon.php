@@ -1,14 +1,14 @@
 <?php $this->layout('layout/default', ['title' => $title, 'style' => $style, 'group' => $group]) ?>
 
 <?php $this->start('page') ?>
-<h1 style="<?= $style['firstHeading'] ?>" align="center">Your Trial Expires Soon</h1>
-<p style="<?= $style['paragraph'] ?>">
+
+<h1 style="<?= $style['firstHeading'] ?>" align="center">
     <?php if (isset($params['customerName'])): ?>
         Dear <?= $params['customerName'] ?>,
     <?php else: ?>
         Dear customer,
     <?php endif; ?>    
-</p>
+</h1>
 <p style="<?= $style['paragraph'] ?>">
     Thank you for using the <strong style="<?= $style['strong'] ?>">7-day trial</strong>. 
     <br>We hope you enjoy the ultimate monitoring features of the Pumpic app.</p>
