@@ -10,11 +10,12 @@
         I need help
     </a>
     <p style="<?= $style['paragraph'] ?>">
-        In case you have finished the purchase, you can ignore this email. </p>
+        In case you have finished the purchase, you can ignore this email.
+    </p>
 
-    <a class="btn" href="<?= $this->analyticsLink(' https://cp.pumpic.com', ['source' => 'pumpic', 'medium' => 'email', 'campaign' => 'abandoned_cart', 'content' => 'notification2']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com', ['source' => 'pumpic', 'medium' => 'email', 'campaign' => 'abandoned_cart', 'content' => 'notification2']) ?>" style="<?= $style['button'] ?>">
         Go to Control Panel
-        </a>
+    </a>
 <?php $this->stop() ?>
 <?php $this->start('footer') ?>
     Warmly, <br>
