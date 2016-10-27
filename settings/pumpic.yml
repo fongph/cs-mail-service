@@ -271,13 +271,11 @@ templates:
     finalReminder:
         sender: support@pumpic.com
         senderName: Pumpic.com
-        group: system
         subject:
             en: Final reminder! You did not finish your purchase on Pumpic
     unfinishedPurchaseNotification:
         sender: support@pumpic.com
         senderName: Pumpic.com
-        group: system
         subject:
             en: Unfinished purchase notification
 templatesVariables:

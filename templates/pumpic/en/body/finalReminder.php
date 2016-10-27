@@ -4,7 +4,7 @@
     <p style="<?= $style['paragraph'] ?>">
         We wanted to remind you one last time that it’s been over 24 hours since you haven’t completed your purchase at Pumpic.
         <br>
-        If you experienced any problems, please, let us know about it
+        If you experienced any problems, please, let us know about it.
     </p>
     <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/faq.html', ['source' => 'pumpic', 'medium' => 'email', 'campaign' => 'abandoned_cart', 'content' => 'notification2']) ?>" style="<?= $style['button'] ?>">
         I need help
