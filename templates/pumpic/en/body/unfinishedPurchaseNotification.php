@@ -15,7 +15,7 @@ If you still hesitate or have any questions about Pumpic product, contact Suppor
     I need help
 </a>
 <p style="<?= $style['paragraph'] ?>">
-In case you have finished the purchase and received this email by mistake, please, press  <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('https://cp.pumpic.com/?alreadyhaveaccount='.$params['email'], ['source' => 'pumpic', 'medium' => 'email', 'campaign' => 'abandoned_cart', 'content' => 'notification1']) ?>" >
+In case you have finished the purchase and received this email by mistake, please, press  <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('https://cp.pumpic.com/?alreadycompletedpurchase='.$params['email'], ['source' => 'pumpic', 'medium' => 'email', 'campaign' => 'abandoned_cart', 'content' => 'notification1']) ?>" >
         <strong style="<?= $style['strong'] ?>">I already completed a purchase</strong></a>
 </p>
 <?php $this->stop() ?>
