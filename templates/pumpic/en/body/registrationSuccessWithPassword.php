@@ -54,7 +54,7 @@
     <br />The app will send all the information from the target device right to your 
     <strong style="<?= $style['strong'] ?>">Control Panel</strong>.</p>
 
-<p style="<?= $style['paragraph'] ?>">Access your Control Panel on <a href="https://cp.pumpic.com" >cp.pumpic.com</a> or download Pumpic Control Panel Mobile Application for Android devices on Google Play (limited functionality).</p>
+<p style="<?= $style['paragraph'] ?>">Access your Control Panel on <a style="<?= $style['textLink'] ?>" href="https://cp.pumpic.com" >cp.pumpic.com</a> or download Pumpic Control Panel Mobile Application for Android devices on Google Play (limited functionality).</p>
 
 <i style="border: 0; 
    font-size: normal; 

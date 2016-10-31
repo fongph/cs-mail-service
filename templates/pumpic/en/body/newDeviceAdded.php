@@ -8,7 +8,7 @@
         Dear customer,
     <?php endif; ?>
 </h1>
-<p style="<?= $style['paragraph'] ?>">Congratulations! Your device <?= $params['deviceName'] ?> has been successfully added to your Personal Account on pumpic.com.</p>
+<p style="<?= $style['paragraph'] ?>">Congratulations! Your device <b><?= $params['deviceName'] ?></b> has been successfully added to your Personal Account on pumpic.com.</p>
 <p style="<?= $style['paragraph'] ?>">
     Thank you for preferring Pumpic software. Hopefully, our services will satisfy 
     your monitoring ambitions completely. We really appreciate your loyalty, and 
