@@ -4,8 +4,8 @@
 <h1 style="<?= $style['firstHeading'] ?>" align="center">Your Trial Expires Soon</h1>
 
 <p style="<?= $style['paragraph'] ?>">
-    <?php if (isset($firstName)) : ?>
-        Dear <?= $firstName ?>,
+    <?php if (isset($params['firstName'])) : ?>
+        Dear <?= $params['firstName'] ?>,
     <?php else: ?>
         Dear customer,
     <?php endif; ?>

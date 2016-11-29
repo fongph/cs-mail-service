@@ -55,16 +55,6 @@
                 vertical-align: baseline;
             }
         </style>
-        <?php
-        if (isset($params['name']) && !empty($params['name'])) {
-            $name = explode(' ', $params['name']);
-            if (is_array($name) && count($name) > 0) {
-                $firstName = $name[0];
-            } else {
-                $firstName = $params['name'];
-            }
-        }
-        ?>
         <div id="body" style="-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 2px solid #4d4f5b; color: #4d4f5b; font: 400 14px 'Open Sans', sans-serif; margin: 0; padding: 0; vertical-align: baseline; width: 600px">
             <div id="header" style="background: #4d4f5b; border: 0; display: block; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; height: 105px; line-height: normal; margin: 0; padding: 0; vertical-align: baseline">
                 <a href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'logo']) ?>" style="border: 0; 

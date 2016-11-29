@@ -2,8 +2,8 @@
 
 <?php $this->start('page') ?>
     <h1 style="<?= $style['firstHeading'] ?>" align="center">
-        <?php if (isset($firstName)) : ?>
-            Dear <?= $firstName ?>,
+        <?php if (isset($params['firstName'])) : ?>
+            Dear <?= $params['firstName'] ?>,
         <?php else: ?>
             Dear customer,
         <?php endif; ?>
