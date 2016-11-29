@@ -2,11 +2,11 @@
 
 <?php $this->start('page') ?>
 <h1 style="<?= $style['firstHeading'] ?>" align="center">
-    <?php if (isset($params['name']) and ( !empty($params['name']) or trim($params['name']) != '')) { ?>
-        Dear <?= $params['name'] ?>,
-    <?php } else { ?>
+    <?php if (isset($firstName)) : ?>
+        Dear <?= $firstName ?>,
+    <?php else: ?>
         Dear customer,
-    <?php } ?>
+    <?php endif; ?>
 </h1>
 
 <div style="display: inline-block;
@@ -42,3 +42,12 @@ Ginna Anderson<br>
 Website: <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">http://pumpic.com</a><br>
 Email: <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
 <?php $this->stop() ?>
+
+<?php $this->start('footer') ?>
+Enjoy Your Peace of Mind, <br>
+<a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
+    Pumpic.com</a><br>
+Support Team<br>
+<a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
+<?php $this->stop() ?>
+

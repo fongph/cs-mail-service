@@ -3,11 +3,11 @@
 <?php $this->start('page') ?>
 
 <h1 style="<?= $style['firstHeading'] ?>" align="center">
-    <?php if (isset($params['customerName'])): ?>
-        Dear <?= $params['customerName'] ?>,
+    <?php if (isset($firstName)) : ?>
+        Dear <?= $firstName ?>,
     <?php else: ?>
         Dear customer,
-    <?php endif; ?>    
+    <?php endif; ?>
 </h1>
 <p style="<?= $style['paragraph'] ?>">
     Thank you for using the <strong style="<?= $style['strong'] ?>">7-day trial</strong>. 

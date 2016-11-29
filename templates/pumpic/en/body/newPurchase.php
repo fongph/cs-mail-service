@@ -1,21 +1,9 @@
-<?php
-$_name = false;
-if (isset($params['customerName'])) {
-    $name = explode(' ', $params['customerName']);
-    if (is_array($name) and count($name) > 0) {
-        $_name = $name[0];
-    } else {
-        $_name = $params['customerName'];
-    }
-}
-?>
-
 <?php $this->layout('layout/default', ['title' => $title, 'style' => $style, 'group' => $group]) ?>
 
 <?php $this->start('page') ?>
     <h1 style="<?= $style['firstHeading'] ?>" align="center">
-        <?php if (isset($params['name']) and ! empty($params['name'])): ?>
-            Dear <?= $params['name'] ?>,
+        <?php if (isset($firstName)) : ?>
+            Dear <?= $firstName ?>,
         <?php else: ?>
             Dear customer,
         <?php endif; ?>
