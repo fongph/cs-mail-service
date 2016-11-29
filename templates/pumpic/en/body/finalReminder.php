@@ -6,18 +6,22 @@
         <br>
         If you experienced any problems, please, let us know about it.
     </p>
-    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/faq.html', ['source' => 'pumpic', 'medium' => 'email', 'campaign' => 'abandoned_cart', 'content' => 'notification2']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/faq.html', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'abandoned_cart', 'content' => 'notification2']) ?>" style="<?= $style['button'] ?>">
         I need help
     </a>
     <p style="<?= $style['paragraph'] ?>">
         In case you have finished the purchase, you can ignore this email.
     </p>
 
-    <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com', ['source' => 'pumpic', 'medium' => 'email', 'campaign' => 'abandoned_cart', 'content' => 'notification2']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'abandoned_cart', 'content' => 'notification2']) ?>" style="<?= $style['button'] ?>">
         Go to Control Panel
     </a>
 <?php $this->stop() ?>
+
 <?php $this->start('footer') ?>
-    Warmly, <br>
-    Pumpic Team
+    Happy monitoring, <br>
+    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
+        Pumpic.com</a><br>
+    Support Team<br>
+    <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
 <?php $this->stop() ?>

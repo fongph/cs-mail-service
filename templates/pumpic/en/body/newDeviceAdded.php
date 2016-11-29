@@ -2,8 +2,8 @@
 
 <?php $this->start('page') ?>
 <h1 style="<?= $style['firstHeading'] ?>" align="center">
-    <?php if (isset($params['name']) and ! empty($params['name'])): ?>
-        Dear <?= $params['name'] ?>,
+    <?php if (isset($firstName)) : ?>
+        Dear <?= $firstName ?>,
     <?php else: ?>
         Dear customer,
     <?php endif; ?>
@@ -18,4 +18,12 @@
     By using Pumpic, you agree that you have gained consent from the owner of the device to be monitored. 
     You also agree that you will monitor your own underage children, those you are a legal guardian of, or your employees only.
 </p>
+<?php $this->stop() ?>
+
+<?php $this->start('footer') ?>
+Enjoy Your Peace of Mind, <br>
+<a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
+    Pumpic.com</a><br>
+Support Team<br>
+<a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
 <?php $this->stop() ?>
