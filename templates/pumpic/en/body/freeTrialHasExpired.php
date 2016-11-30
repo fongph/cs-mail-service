@@ -28,3 +28,10 @@
    padding: 15px 0px; 
    vertical-align: baseline">Keep your eyes open!</i>
 <?php $this->stop() ?>
+<?php $this->start('footer') ?>
+    Happy monitoring, <br>
+    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
+        Pumpic.com</a><br>
+    Support Team<br>
+    <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
+<?php $this->stop() ?>
