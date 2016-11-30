@@ -278,6 +278,11 @@ templates:
         senderName: Pumpic.com
         subject:
             en: Unfinished purchase notification
+    RegistrationEmailFromMobileApplication:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en: Start monitoring today!
 templatesVariables:
     style:
         paragraph: 'border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 15px 0px; vertical-align: baseline;'

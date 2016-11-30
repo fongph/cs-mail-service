@@ -79,7 +79,14 @@ class Request {
         if (isset($templateSettings['group'])) {
             $this->group = $templateSettings['group'];
         }
-
+        if (isset($data['params']['name']) && !empty($data['params']['name'])){
+            $fullName = explode(' ', $data['params']['name']);
+            if (is_array($fullName) && count($fullName) > 0) {
+                $data['params']['firstName'] = $fullName[0];
+            } else {
+                $data['params']['firstName'] = $data['params']['name'];
+            }
+        }
         $this->templateVariables = array_merge($this->templateVariables, [
             'params' => $data['params'],
             'title' => $this->subject,
