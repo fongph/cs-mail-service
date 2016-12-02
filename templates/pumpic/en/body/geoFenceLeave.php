@@ -25,3 +25,11 @@
     You can customize Geo-fencing preferences and alerts in <a href="<?= $this->analyticsLink($params['zoneHref'], ['term' => 'geoFenceLeave']) ?>" style="<?= $style['textLink'] ?>">https://cp.pumpic.com/cp/locations/zones</a>
 </p>
 <?php $this->stop() ?>
+<?php $this->start('footer') ?>
+Happy monitoring, <br>
+<a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
+    Pumpic.com</a><br>
+Support Team<br>
+<a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
+<?php $this->stop() ?>
+

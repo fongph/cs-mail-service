@@ -4,8 +4,8 @@ locales:
     - en
 defaultLocale: en
 defaultAnalyticsParams:
-    source: newsletter
-    medium: email
+    source: system
+    medium: system-email
 templates:
     FAQ_pumpic:
         sender: noreply@pumpic.com

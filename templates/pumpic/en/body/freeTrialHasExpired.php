@@ -16,7 +16,7 @@
 
 <p style="<?= $style['paragraph'] ?>">However, please note that your trial has <strong style="<?= $style['strong'] ?>">expired today</strong>. 
     If you enjoyed Pumpic&rsquo;s functionality and want to continue using it, 
-    please choose a new <a href="<?= $this->analyticsLink('http://pumpic.com/store.html', ['term' => 'freeTrialHasExpired']) ?>" style="<?= $style['textLink'] ?>">subscription</a> to continue using the app.</p>
+    please choose a new <a href="<?= $this->analyticsLink('http://pumpic.com/store.html', ['term' => 'store']) ?>" style="<?= $style['textLink'] ?>">subscription</a> to continue using the app.</p>
 
 <i style="border: 0; 
    font-size: normal; 
@@ -27,11 +27,4 @@
    margin: 0; 
    padding: 15px 0px; 
    vertical-align: baseline">Keep your eyes open!</i>
-<?php $this->stop() ?>
-<?php $this->start('footer') ?>
-    Happy monitoring, <br>
-    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
-        Pumpic.com</a><br>
-    Support Team<br>
-    <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
 <?php $this->stop() ?>
