@@ -6,14 +6,14 @@
         <br>
         If you experienced any problems, please, let us know about it.
     </p>
-    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/faq.html', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'abandoned_cart', 'content' => 'notification2']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/faq.html', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'abandoned_cart', 'content' => 'needHelp']) ?>" style="<?= $style['button'] ?>">
         I need help
     </a>
     <p style="<?= $style['paragraph'] ?>">
         In case you have finished the purchase, you can ignore this email.
     </p>
 
-    <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'abandoned_cart', 'content' => 'notification2']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'abandoned_cart', 'content' => 'goToCP']) ?>" style="<?= $style['button'] ?>">
         Go to Control Panel
     </a>
 <?php $this->stop() ?>

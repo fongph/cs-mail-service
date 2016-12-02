@@ -17,7 +17,7 @@
 <p style="<?= $style['paragraph'] ?>">Please press the button below to unlock your account and continue using Pumpic monitoring advantages.</p>
 
 <div class="btn-center" style="<?= $style['buttonWrapper'] ?>" align="center">
-    <a class="btn" href="<?= $this->analyticsLink($params['unlockUrl'], ['term' => 'locked']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink($params['unlockUrl'], ['term' => 'unlock']) ?>" style="<?= $style['button'] ?>">
         Unlock
     </a>
 </div>

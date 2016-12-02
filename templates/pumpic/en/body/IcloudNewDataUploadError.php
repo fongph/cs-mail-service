@@ -15,5 +15,5 @@ Please, make sure backup is enabled on the target device and back it up manually
 To back up the device, open Settings app, select iCloud section, Backup and tap on "Back Up Now".
 </p>
 
-<p style="<?= $style['paragraph'] ?>">You can also contact our <a href="https://cp.pumpic.com/support" style="text-decoration: underline;">Customer Support</a> if you need assistance.</p>
+<p style="<?= $style['paragraph'] ?>">You can also contact our <a href="<?= $this->analyticsLink('https://cp.pumpic.com/support', ['term' => 'contactSupport']) ?>" style="text-decoration: underline;">Customer Support</a> if you need assistance.</p>
 <?php $this->stop() ?>

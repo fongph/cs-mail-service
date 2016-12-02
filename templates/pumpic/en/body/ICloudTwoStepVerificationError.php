@@ -11,7 +11,7 @@
 <p style="<?= $style['paragraph'] ?>">
     A two-step verification is activated in the account of the target device. You should turn it off to receive data updates.
     Please follow the link to learn more and solve the problem:
-    <a class="btn" style="<?= $style['button'] ?>" href="https://support.apple.com/en-us/HT202664" style="<?= $style['button'] ?>">https://support.apple.com/en-us/HT202664</a>
+    <a class="btn" style="<?= $style['button'] ?>" href="<?= $this->analyticsLink('https://support.apple.com/en-us/HT202664', ['term' => 'supportApple']) ?>" style="<?= $style['button'] ?>">https://support.apple.com/en-us/HT202664</a>
 </p>
 <?php $this->stop() ?>
 
