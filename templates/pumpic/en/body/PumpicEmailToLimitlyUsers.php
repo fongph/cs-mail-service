@@ -92,7 +92,7 @@
     Even when you just know when and what about to talk to your child will make you a better parent – as it made thousands of our grateful customers. </p>
 
 <div class="btn-center" style="<?= $style['buttonWrapper'] ?>" align="center">
-    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'limitly', 'medium' => 'email', 'campaign' => 'pumpic-form']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'limitly', 'medium' => 'email', 'campaign' => 'pumpic-form', 'term' => 'store']) ?>" style="<?= $style['button'] ?>">
         Learn more
     </a>
 </div>
