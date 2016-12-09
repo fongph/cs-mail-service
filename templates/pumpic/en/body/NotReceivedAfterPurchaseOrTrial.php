@@ -38,12 +38,6 @@
 <?php $this->stop() ?>
 
 <?php $this->start('footer') ?>
-Ginna Anderson<br>
-Website: <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">http://pumpic.com</a><br>
-Email: <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
-<?php $this->stop() ?>
-
-<?php $this->start('footer') ?>
 Enjoy Your Peace of Mind, <br>
 <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
     Pumpic.com</a><br>
