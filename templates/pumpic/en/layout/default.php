@@ -57,7 +57,7 @@
         </style>
         <div id="body" style="-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 2px solid #4d4f5b; color: #4d4f5b; font: 400 14px 'Open Sans', sans-serif; margin: 0; padding: 0; vertical-align: baseline; width: 600px">
             <div id="header" style="background: #4d4f5b; border: 0; display: block; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; height: 105px; line-height: normal; margin: 0; padding: 0; vertical-align: baseline">
-                <a href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'logo']) ?>" style="border: 0; 
+                <a href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'logo']) ?>" style="border: 0;
                    font-size: normal; 
                    font-style: normal; 
                    font-variant: normal; 
@@ -80,7 +80,7 @@
                     <?= $this->section('footer') ?>
                 <?php else: ?>
                     Best Regards,<br>
-                    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
+                    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'signature']) ?>">
                         Pumpic.com</a><br>
                     Support Team<br>
                     <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
