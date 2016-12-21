@@ -35,6 +35,13 @@ class Mail {
         }
     }
 
+    /**
+     * @return Swift_Message
+     */
+    public function getMessage() {
+        return $this->message;
+    }
+
     public function send(Swift_Mailer $mailer)
     {
         $result = $mailer->send($this->message);

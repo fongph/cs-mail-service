@@ -4,3 +4,4 @@
 config.php
 docker-compose.yml
 /.idea
+tests/_output/*

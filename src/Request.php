@@ -40,6 +40,10 @@ class Request {
 
         $templateSettings = $siteSettings['templates'][$data['type']];
 
+        if (!isset($templateSettings['sender'])) {
+            throw new \Exception("Sender not defined");
+        }
+
         if (isset($data['params'])) {
             $this->subject = $this->generateSubject($templateSettings['subject'][$this->locale], $data['params']);
         } else {
@@ -50,14 +54,10 @@ class Request {
             $this->user = $data['user_id'];
         }
 
-        if (isset($templateSettings['sender'])) {
-            if (isset($templateSettings['senderName'])) {
-                $this->sender = [$templateSettings['sender'] => $templateSettings['senderName']];
-            } else {
-                $this->sender = $templateSettings['sender'];
-            }
+        if (isset($templateSettings['senderName'])) {
+            $this->sender = [$templateSettings['sender'] => $templateSettings['senderName']];
         } else {
-            throw new \Exception("Sender not defined");
+            $this->sender = $templateSettings['sender'];
         }
 
         if (isset($siteSettings['defaultAnalyticsParams'])) {
@@ -81,14 +81,11 @@ class Request {
         }
         if (isset($data['params']['name']) && !empty($data['params']['name'])){
             $fullName = explode(' ', $data['params']['name']);
-            if (is_array($fullName) && count($fullName) > 0) {
-                $data['params']['firstName'] = $fullName[0];
-            } else {
-                $data['params']['firstName'] = $data['params']['name'];
-            }
+            $data['params']['firstName'] = $fullName[0];
         }
+
         $this->templateVariables = array_merge($this->templateVariables, [
-            'params' => $data['params'],
+            'params' => $this->getParams(),
             'title' => $this->subject,
             'group' => $this->group
         ]);

@@ -6,8 +6,8 @@ return [
     ],
     'defaultSite' => 'pumpic',
     'queue' => [
-        'host' => '',
-        'port' => '',
+        'host' => '127.0.0.1',
+        'port' => '8090',
         'user' => '',
         'password' => '',
         'providerKey' => '',
