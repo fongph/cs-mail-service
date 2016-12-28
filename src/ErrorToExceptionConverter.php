@@ -49,7 +49,7 @@ class ErrorToExceptionConverter {
     {
         $lastError = error_get_last();
         if (strpos($lastError['message'], "bytes exhausted")) {
-            $message = $this->getErrorExceptionMessage($lastError['type'], $lastError['message']);
+            $message = self::getErrorExceptionMessage($lastError['type'], $lastError['message']);
             throw new \ErrorException($message, $lastError['type'], 1, $lastError['file'], $lastError['line']);
         }
     }
