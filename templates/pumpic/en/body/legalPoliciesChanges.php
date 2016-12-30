@@ -14,9 +14,7 @@
     <p style="<?= $style['paragraph'] ?>">
         The Legal Policies updates introduce terms that govern legal issues of <b><i>processing data you provide us with. Also, they clarify how some parts of our services work, including:</i></b>
     </p>
-    <p style="<?= $style['paragraph'] ?>">
-        <?= $params['text'] ?>
-    </p>
+    <?= $params['text'] ?>
     <p style="<?= $style['paragraph'] ?>">
         The most current version of Pumpic Legal Policies with the latest updates is available at <a href="http://pumpic.com/policy.html">http://pumpic.com/policy.html</a>.
         Please, read it carefully.
@@ -24,16 +22,14 @@
     <div style="text-align: center">
         <p  style="<?= $style['paragraph'] ?>">
             <b>Would you like to accept new terms of service now?</b>
-        </p>
-        <p  style="<?= $style['paragraph'] ?>">
+            <br>
             <i>(We'll take you to the Control Panel login page.)</i>
         </p>
     </div>
     <div class="btn-center" style="<?= $style['buttonWrapper'] ?>" align="center">
-        <a class="btn" href="https://cp.pumpic.com/" style="<?= $style['button'] ?>">
+        <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'tos']) ?>" style="<?= $style['button'] ?>">
             Yes, please
         </a>
-        <span> I'll do it later </span>
     </div>
 
     <p style="<?= $style['paragraph'] ?>">
