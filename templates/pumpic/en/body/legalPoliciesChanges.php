@@ -9,14 +9,14 @@
         <?php endif; ?>
     </h1>
     <p style="<?= $style['paragraph'] ?>">
-        This email is to advise you of changes made to the Pumpic Legal Policies.
+        This email is to advise you of changes made to the Pumpic <?= $params['legacyName'] ?>.
     </p>
     <p style="<?= $style['paragraph'] ?>">
-        The Legal Policies updates introduce terms that govern legal issues of <b><i>processing data you provide us with. Also, they clarify how some parts of our services work, including:</i></b>
+        The <?= $params['legacyName'] ?> updates introduce terms that govern legal issues of <b><i>processing data you provide us with. Also, they clarify how some parts of our services work, including:</i></b>
     </p>
     <?= $params['text'] ?>
     <p style="<?= $style['paragraph'] ?>">
-        The most current version of Pumpic Legal Policies with the latest updates is available at <a href="http://pumpic.com/policy.html">http://pumpic.com/policy.html</a>.
+        The most current version of Pumpic <?= $params['legacyName'] ?> with the latest updates is available at <a href="http://pumpic.com/policy.html">http://pumpic.com/policy.html</a>.
         Please, read it carefully.
     </p>
     <div style="text-align: center">
@@ -27,13 +27,13 @@
         </p>
     </div>
     <div class="btn-center" style="<?= $style['buttonWrapper'] ?>" align="center">
-        <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'tos']) ?>" style="<?= $style['button'] ?>">
+        <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => $params['term']]) ?>" style="<?= $style['button'] ?>">
             Yes, please
         </a>
     </div>
 
     <p style="<?= $style['paragraph'] ?>">
-        We are committed to keeping our services as clear and convenient for you (and all of our customers) as it only gets. If you have any questions or thoughts about our Legal Policies, please contact us by emailing to <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>.
+        We are committed to keeping our services as clear and convenient for you (and all of our customers) as it only gets. If you have any questions or thoughts about our <?= $params['legacyName'] ?>, please contact us by emailing to <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>.
     </p>
 <?php $this->stop() ?>
 
