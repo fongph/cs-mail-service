@@ -1,7 +1,7 @@
 <?php
 
 require 'vendor/autoload.php';
-$config = require 'config.development.php';
+$config = require 'config.php';
 
 $logger = new \Monolog\Logger("mail-service");
 
