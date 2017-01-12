@@ -16,7 +16,7 @@
     </p>
     <?= $params['text'] ?>
     <p style="<?= $style['paragraph'] ?>">
-        The most current version of Pumpic <?= $params['legacyName'] ?> with the latest updates is available at <a href="http://pumpic.com/policy.html">http://pumpic.com/policy.html</a>.
+        The most current version of Pumpic <?= $params['legacyName'] ?> with the latest updates is available at <a href="http://pumpic.com/<?= $params['link'] ?>.html">http://pumpic.com/<?= $params['link'] ?>.html</a>.
         Please, read it carefully.
     </p>
     <div style="text-align: center">
