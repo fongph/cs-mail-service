@@ -283,7 +283,7 @@ templates:
         senderName: Pumpic.com
         subject:
             en: Start monitoring today!
-    legalPoliciesChanges:
+    legalChanges:
         sender: support@pumpic.com
         senderName: Pumpic.com
         subject:
