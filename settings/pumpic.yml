@@ -290,6 +290,20 @@ templates:
             en:
                 - 'IMPORTANT: Changes in Pumpic %s. Acceptance required'
                 - [legacyName]
+    employeeRequestUser:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en:
+                - 'Employee Monitoring request # E%s - '
+                - [ticketNumber, email]
+    systemEmployeeRequest:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        subject:
+            en:
+                - 'Employee Monitoring request # E%s received'
+                - [ticketNumber]
 templatesVariables:
     style:
         paragraph: 'border: 0; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 15px 0px; vertical-align: baseline;'

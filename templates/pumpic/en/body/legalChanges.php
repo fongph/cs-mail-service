@@ -16,8 +16,11 @@
     </p>
     <?= $params['text'] ?>
     <p style="<?= $style['paragraph'] ?>">
-        The most current version of Pumpic <?= $params['legacyName'] ?> with the latest updates is available at <a href="http://pumpic.com/<?= $params['link'] ?>.html">http://pumpic.com/<?= $params['link'] ?>.html</a>.
+        The most current version of Pumpic <?= $params['legacyName'] ?> with the latest updates is available at <a href="<?= $this->analyticsLink('http://pumpic.com/'. $params['link'] .'.html', ['source' => 'system', 'medium' => 'system-email', 'term' => $params['term']]) ?>">http://pumpic.com/<?= $params['link'] ?>.html</a>.
         Please, read it carefully.
+    </p>
+    <p style="<?= $style['paragraph'] ?>">
+        You will be prompted to accept the new terms the next time when attempting to log in to the Control Panel.
     </p>
     <div style="text-align: center">
         <p  style="<?= $style['paragraph'] ?>">
