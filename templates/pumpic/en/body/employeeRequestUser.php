@@ -25,8 +25,8 @@
     <b class="green" style="<?= $style['colorText'] ?>">Question Type</b>: <?= $params['type'] ?><br/>        
     <?php endif; ?>
 
-    <?php if (isset($params['devices'])): ?>
-    <b class="green" style="<?= $style['colorText'] ?>">Number of devices</b>: <?= $params['devices'] ?><br/>
+    <?php if (isset($params['deviceCount']) && !empty($params['deviceCount'])): ?>
+    <b class="green" style="<?= $style['colorText'] ?>">Number of devices</b>: <?= $params['deviceCount'] ?><br/>
     <?php endif; ?>
 
     <?php if (isset($params['os'])): ?>
