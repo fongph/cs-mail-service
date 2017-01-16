@@ -295,7 +295,7 @@ templates:
         senderName: Pumpic.com
         subject:
             en:
-                - 'Employee Monitoring request # E%s - '
+                - 'Employee Monitoring request # E%s - %s'
                 - [uid, email]
     systemEmployeeRequest:
         sender: support@pumpic.com
