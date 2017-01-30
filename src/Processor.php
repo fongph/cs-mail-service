@@ -86,9 +86,7 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
 
     private function handleException($exception)
     {
-        unset($this->db);
-
-        throw $exception;
+        $this->logger->addError("Exception when message sending", ['exception' => $exception]);
     }
 
     private function sendEmail($request)
