@@ -8,6 +8,7 @@ use Swarrot\Broker\Message;
 use Symfony\Component\Yaml\Yaml;
 use Psr\Log\LoggerInterface;
 use Swift_Mailer;
+use Swift_RfcComplianceException;
 use PDO;
 
 /**
@@ -71,9 +72,12 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
             $this->pushLead($request);
             $result = $this->sendEmail($request);
 
-            $this->logger->addInfo("Message '{$type}' sended", ['result' => $result]);
+            $this->logger->info("Message '{$type}' sended", ['result' => $result]);
 
             $this->db->commit();
+        } catch (Swift_RfcComplianceException $e) {    
+            $this->logger->error("Invalid email passed", ['exception' => $e]);
+            $this->db->rollBack();
         } catch (\Throwable $e) {
             $this->handleException($e);
         } catch (\Exception $e) {
@@ -86,7 +90,9 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
 
     private function handleException($exception)
     {
-        $this->logger->addError("Exception when message sending", ['exception' => $exception]);
+        unset($this->db);
+
+        throw $exception;
     }
 
     private function sendEmail($request)
