@@ -151,7 +151,7 @@
 <p style="<?= $style['paragraph'] ?>">Got questions? Contact support or</p>
 
 <div class="btn-center" style="<?= $style['buttonWrapper'] ?>" align="center">
-    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/store.html', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'registration']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/store.html', ['source' => 'ioscpapp', 'medium' => 'system-email', 'campaign' => 'registration']) ?>" style="<?= $style['button'] ?>">
         Start Monitoring Now
     </a>
 </div>
