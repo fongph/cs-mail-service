@@ -16,7 +16,7 @@
     </p>
     <?= $params['text'] ?>
     <p style="<?= $style['paragraph'] ?>">
-        The most current version of Pumpic <?= $params['legacyName'] ?> with the latest updates is available at <a href="<?= $this->analyticsLink('http://pumpic.com/'. $params['link'] .'.html', ['source' => 'system', 'medium' => 'system-email', 'term' => $params['term']]) ?>">http://pumpic.com/<?= $params['link'] ?>.html</a>.
+        The most current version of Pumpic <?= $params['legacyName'] ?> with the latest updates is available at <a href="<?= $this->analyticsLink('http://pumpic.com/'. $params['link'] .'.html', ['source' => 'system', 'medium' => 'system-email','campaign' => 'tos-update', 'term' => $params['term']]) ?>">http://pumpic.com/<?= $params['link'] ?>.html</a>.
         Please, read it carefully.
     </p>
     <p style="<?= $style['paragraph'] ?>">
@@ -30,7 +30,7 @@
         </p>
     </div>
     <div class="btn-center" style="<?= $style['buttonWrapper'] ?>" align="center">
-        <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => $params['term']]) ?>" style="<?= $style['button'] ?>">
+        <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'tos-update', 'term' => $params['term']]) ?>" style="<?= $style['button'] ?>">
             Yes, please
         </a>
     </div>
