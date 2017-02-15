@@ -14,6 +14,7 @@ $connection = new PhpAmqpLib\Connection\AMQPConnection($config['queue']['host'],
 $queueChannel = $connection->channel();
 
 $messageProvider = new \Swarrot\Broker\MessageProvider\PhpAmqpLibMessageProvider($queueChannel, $config['queue']['providerKey']);
+$messagePublisher = new \Swarrot\Broker\MessagePublisher\PhpAmqpLibMessagePublisher($queueChannel, 'retry');
 
 $options['ssl']['verify_peer'] = false;
 $options['ssl']['verify_peer_name'] = false;
@@ -33,6 +34,8 @@ $stack = new \Swarrot\Processor\Stack\Builder();
 $stack->push('Swarrot\Processor\SignalHandler\SignalHandlerProcessor', $logger)
         ->push('Swarrot\Processor\MaxMessages\MaxMessagesProcessor', $logger)
         ->push('Swarrot\Processor\ExceptionCatcher\ExceptionCatcherProcessor', $logger)
+        ->push('CS\MailService\MessageSanitizer', $logger)
+        ->push('Swarrot\Processor\Retry\RetryProcessor', $messagePublisher, $logger)
         ->push('CS\MailService\MessageDebugProcessor', $logger)
         ->push('Swarrot\Processor\Ack\AckProcessor', $messageProvider, $logger);
 
@@ -40,6 +43,10 @@ $processor = $stack->resolve(new CS\MailService\Processor($mailer, $logger));
 
 $consumer = new Swarrot\Consumer($messageProvider, $processor, null, $logger);
 $consumer->consume([
+    'retry_attempts' => 3,
+    'retry_log_levels_map' => array(),
+    'retry_fail_log_levels_map' => array(),
+    'retry_key_pattern' => 'mail_retry_%attempt%',
     'requeue_on_error' => true,
     'max_messages' => 100,
     'db_host' => $config['db']['host'],
