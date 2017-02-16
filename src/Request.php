@@ -24,7 +24,6 @@ class Request {
     {
         $this->site = $siteSettings['name'];
         $this->locale = $siteSettings['defaultLocale'];
-        $this->data = $data;
 
         if (!isset($data['type'])) {
             throw new \Exception("Message type not defined");
@@ -83,6 +82,8 @@ class Request {
             $fullName = explode(' ', $data['params']['name']);
             $data['params']['firstName'] = $fullName[0];
         }
+
+        $this->data = $data;
 
         $this->templateVariables = array_merge($this->templateVariables, [
             'params' => $this->getParams(),

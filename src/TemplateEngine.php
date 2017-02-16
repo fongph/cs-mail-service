@@ -37,7 +37,7 @@ class TemplateEngine {
         $this->engine->registerFunction('analyticsLink', function ($uri, $inputParams = []) use ($analyticsParams) {
             $params = array_merge($analyticsParams, $inputParams);
 
-            if (!isset($params['source']) || !isset($params['medium']) || !isset($params['campaign'])) {
+            if (!isset($params['source']) || !isset($params['medium'])) {
                 return $uri;
             }
 
