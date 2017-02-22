@@ -46,7 +46,7 @@
 
 <?php $this->start('footer') ?>
 Yours sincerely, <br>
-<a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'employee-form']) ?>">
+<a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('https://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'employee-form']) ?>">
     Pumpic.com</a><br>
 Support Team<br>
 <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>

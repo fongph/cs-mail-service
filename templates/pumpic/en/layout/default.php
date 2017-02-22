@@ -57,7 +57,7 @@
         </style>
         <div id="body" style="-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 2px solid #4d4f5b; color: #4d4f5b; font: 400 14px 'Open Sans', sans-serif; margin: 0; padding: 0; vertical-align: baseline; width: 600px">
             <div id="header" style="background: #4d4f5b; border: 0; display: block; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; height: 105px; line-height: normal; margin: 0; padding: 0; vertical-align: baseline">
-                <a href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'logo']) ?>" style="border: 0;
+                <a href="<?= $this->analyticsLink('https://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'logo']) ?>" style="border: 0;
                    font-size: normal; 
                    font-style: normal; 
                    font-variant: normal; 
@@ -67,7 +67,7 @@
                    padding: 0; 
                    text-decoration: none; 
                    vertical-align: baseline">
-                    <img src="http://pumpic.com/images/logo-mail.png" alt="" style="border: 0; display: block; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0 auto; padding: 30px 0 0; vertical-align: baseline">
+                    <img src="https://pumpic.com/images/logo-mail.png" alt="" style="border: 0; display: block; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0 auto; padding: 30px 0 0; vertical-align: baseline">
                 </a>
             </div>
 
@@ -80,7 +80,7 @@
                     <?= $this->section('footer') ?>
                 <?php else: ?>
                     Best Regards,<br>
-                    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'signature']) ?>">
+                    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('https://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'signature']) ?>">
                         Pumpic.com</a><br>
                     Support Team<br>
                     <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
@@ -90,11 +90,11 @@
             <?php if (isset($group)): ?>
                 <?php if ($group == 'system'): ?>
                     <div style="border: 0; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0 40px 15px 40px; vertical-align: baseline; text-align: center; color: #a3a3a3;">
-                        If you’d no longer like to receive account status emails from Pumpic, please <a style="border: 0; color: #a3a3a3; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; text-decoration: underline; vertical-align: baseline;" href="http://cp.pumpic.com/profile/unsubscribe/system" target="_blank">unsubscribe</a>.
+                        If you’d no longer like to receive account status emails from Pumpic, please <a style="border: 0; color: #a3a3a3; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; text-decoration: underline; vertical-align: baseline;" href="https://cp.pumpic.com/profile/unsubscribe/system" target="_blank">unsubscribe</a>.
                     </div>
                 <?php elseif ($group == 'monitoring'): ?>
                     <div style="border: 0; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0 40px 15px 40px; vertical-align: baseline; text-align: center; color: #a3a3a3;">
-                        If you’d no longer like to receive monitoring notification emails from Pumpic, please <a style="border: 0; color: #a3a3a3; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; text-decoration: underline; vertical-align: baseline;" href="http://cp.pumpic.com/profile/unsubscribe/monitoring" target="_blank">unsubscribe</a>.
+                        If you’d no longer like to receive monitoring notification emails from Pumpic, please <a style="border: 0; color: #a3a3a3; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; text-decoration: underline; vertical-align: baseline;" href="https://cp.pumpic.com/profile/unsubscribe/monitoring" target="_blank">unsubscribe</a>.
                     </div>
                 <?php endif; ?>
             <?php endif; ?>

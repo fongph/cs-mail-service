@@ -39,7 +39,7 @@
 
 <?php $this->start('footer') ?>
 Ginna Anderson<br>
-Website: <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'signature']) ?>">http://pumpic.com</a><br>
+Website: <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('https://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'signature']) ?>">https://pumpic.com</a><br>
 Email: <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
 <?php $this->stop() ?>
 

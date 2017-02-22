@@ -15,7 +15,7 @@
 
 <p style="<?= $style['paragraph'] ?>">
     Please note that your trial is about to expire in <strong style="<?= $style['strong'] ?>"><?= $params['numberDays'] ?> day<?php if ($params['numberDays'] > 1): ?>s<?php endif; ?></strong>!
-    You can <a href="<?= $this->analyticsLink('http://pumpic.com/store.html', ['term' => 'store']) ?>" style="<?= $style['textLink'] ?>">subscribe</a> to one of our plans right now and continue using the app without interruption.
+    You can <a href="<?= $this->analyticsLink('https://pumpic.com/store.html', ['term' => 'store']) ?>" style="<?= $style['textLink'] ?>">subscribe</a> to one of our plans right now and continue using the app without interruption.
 </p>
 
 <i style="border: 0;

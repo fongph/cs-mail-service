@@ -16,7 +16,7 @@
     </p>
     <?= $params['text'] ?>
     <p style="<?= $style['paragraph'] ?>">
-        The most current version of Pumpic <?= $params['legacyName'] ?> with the latest updates is available at <a href="<?= $this->analyticsLink('http://pumpic.com/'. $params['link'] .'.html', ['source' => 'system', 'medium' => 'system-email','campaign' => 'tos-update', 'term' => $params['term']]) ?>">http://pumpic.com/<?= $params['link'] ?>.html</a>.
+        The most current version of Pumpic <?= $params['legacyName'] ?> with the latest updates is available at <a href="<?= $this->analyticsLink('https://pumpic.com/'. $params['link'] .'.html', ['source' => 'system', 'medium' => 'system-email','campaign' => 'tos-update', 'term' => $params['term']]) ?>">https://pumpic.com/<?= $params['link'] ?>.html</a>.
         Please, read it carefully.
     </p>
     <p style="<?= $style['paragraph'] ?>">

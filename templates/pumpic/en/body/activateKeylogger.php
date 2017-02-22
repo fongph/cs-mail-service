@@ -25,7 +25,7 @@
 
 <?php $this->start('footer') ?>
 Happy monitoring, <br>
-<a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['term' => 'signature']) ?>">
+<a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('https://pumpic.com/', ['term' => 'signature']) ?>">
     Pumpic.com</a><br>
 Support Team<br>
 <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>

@@ -15,10 +15,10 @@
 
 <div class="btn-center" style="<?= $style['buttonWrapper'] ?>" align="center">
     <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com/', ['term' => 'simCardChanged']) ?>" style="<?= $style['button'] ?>">
-        <img src="http://pumpic.com/images/lock_mail.png" 
+        <img src="https://pumpic.com/images/lock_mail.png"
              class="icon-lock"
              alt=""
-             style="background: url('http://pumpic.com/images/lock_mail.png'); border: 0; display: inline-block; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; height: 13px; line-height: normal; margin: 0 10px 0 0; padding: 0; speak: none; vertical-align: baseline; width: 9px">Login
+             style="background: url('https://pumpic.com/images/lock_mail.png'); border: 0; display: inline-block; font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; height: 13px; line-height: normal; margin: 0 10px 0 0; padding: 0; speak: none; vertical-align: baseline; width: 9px">Login
     </a>
 </div>
 

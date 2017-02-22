@@ -151,7 +151,7 @@
 <p style="<?= $style['paragraph'] ?>">Got questions? Contact support or</p>
 
 <div class="btn-center" style="<?= $style['buttonWrapper'] ?>" align="center">
-    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/store.html', ['source' => 'ioscpapp', 'medium' => 'system-email', 'campaign' => 'registration']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('https://pumpic.com/store.html', ['source' => 'ioscpapp', 'medium' => 'system-email', 'campaign' => 'registration']) ?>" style="<?= $style['button'] ?>">
         Start Monitoring Now
     </a>
 </div>
@@ -159,7 +159,7 @@
 
 <?php $this->start('footer') ?>
 Enjoy Your Peace of Mind, <br>
-<a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'signature']) ?>">
+<a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('https://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'signature']) ?>">
     Pumpic.com</a><br>
 Support Team<br>
 <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>

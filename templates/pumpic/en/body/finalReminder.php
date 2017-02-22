@@ -6,7 +6,7 @@
         <br>
         If you experienced any problems, please, let us know about it.
     </p>
-    <a class="btn" href="<?= $this->analyticsLink('http://pumpic.com/faq.html', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'abandoned_cart', 'content' => 'needHelp']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('https://pumpic.com/faq.html', ['source' => 'system', 'medium' => 'system-email', 'campaign' => 'abandoned_cart', 'content' => 'needHelp']) ?>" style="<?= $style['button'] ?>">
         I need help
     </a>
     <p style="<?= $style['paragraph'] ?>">
@@ -20,7 +20,7 @@
 
 <?php $this->start('footer') ?>
     Happy monitoring, <br>
-    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('http://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'signature']) ?>">
+    <a style="<?= $style['textLink'] ?>" href="<?= $this->analyticsLink('https://pumpic.com/', ['source' => 'system', 'medium' => 'system-email', 'term' => 'signature']) ?>">
         Pumpic.com</a><br>
     Support Team<br>
     <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">support@pumpic.com</a>
