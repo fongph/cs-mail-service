@@ -12,7 +12,7 @@
 
 <?php if (isset($params['link'])): ?>
 <p style="<?= $style['paragraph'] ?>">
-    <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com/profile/iCloudPassword/' . $params['link'], ['term' => 'reset-password']) ?>" style="<?= $style['button'] ?>">
+    <a class="btn" href="<?= $this->analyticsLink('https://cp.pumpic.com/profile/iCloudAccount/' . $params['link'], ['term' => 'reset-password']) ?>" style="<?= $style['button'] ?>">
         RESET PASSWORD
     </a>  
 </p>
