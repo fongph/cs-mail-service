@@ -94,7 +94,7 @@ templates:
         subject:
             en: 'iCloud Monitoring: iCloud authorization error'
         analyticsCampaign: icloud-authorization-error
-    IcloudAuthorizationError:
+    IcloudUnblockInstruction:
         sender: support@pumpic.com
         senderName: Pumpic.com
         group: monitoring
