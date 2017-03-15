@@ -94,6 +94,13 @@ templates:
         subject:
             en: 'iCloud Monitoring: iCloud authorization error'
         analyticsCampaign: icloud-authorization-error
+    IcloudAuthorizationError:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        group: monitoring
+        subject:
+            en: Pumpic Monitoring: Can't download iCloud backup. Unblock target Apple ID
+        analyticsCampaign: blocked-apple-id-error
     IcloudNewDataUploadError:
         sender: support@pumpic.com
         senderName: Pumpic.com
