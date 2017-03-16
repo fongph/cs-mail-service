@@ -160,7 +160,7 @@
         vertical-align: baseline">Enter the new password -> click Update</li>
 </ul>
 
-<p><i>Note:</i> If two-factor authentication is enabled on the target Apple ID, you will need to generate and enter the
+<p><b>Note:</b> If two-factor authentication is enabled on the target Apple ID, you will need to generate and enter the
     Verification Code after you enter your target Apple ID and password. Instructions will be provided in your
     Control Panel. <a href="https://cp.pumpic.com/instructions/2factor-authentication.html">Here</a> you can find out more about two-factor authentication.</p>
 <?php $this->stop() ?>
