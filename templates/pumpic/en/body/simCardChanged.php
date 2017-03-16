@@ -1,7 +1,14 @@
 <?php $this->layout('layout/default', ['title' => $title, 'style' => $style, 'group' => $group]) ?>
 
 <?php $this->start('page') ?>
-<p style="<?= $style['paragraph'] ?>">Dear Customer,</p>
+    <h1 style="<?= $style['firstHeading'] ?>" align="center">
+        <?php if (isset($params['firstName'])) : ?>
+            Dear <?= $params['firstName'] ?>,
+        <?php else: ?>
+            Dear customer,
+        <?php endif; ?>
+    </h1>
+
 <p style="<?= $style['paragraph'] ?>">
     Thank you for choosing Pumpic as your monitoring software. We take care of 
     our clients and always provide you with important information immediately. We 
