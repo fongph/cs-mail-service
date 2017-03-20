@@ -36,7 +36,7 @@
         list-style: initial;
         margin: 0 0 10px;
         padding: 0;
-        vertical-align: baseline">Go to <a href="iforgot.apple.com">iforgot.apple.com</a></li>
+        vertical-align: baseline">Go to <a href="https://iforgot.apple.com">iforgot.apple.com</a></li>
     <li style="border: 0;
         font-size: normal;
         font-style: normal;
