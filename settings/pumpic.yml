@@ -115,13 +115,6 @@ templates:
         subject:
             en: 'iCloud Monitoring: iCloud two step verification error'
         analyticsCampaign: icloud-2-step-verification-error
-    ICloudTwoStepAuthenticationError:
-        sender: support@pumpic.com
-        senderName: Pumpic.com
-        group: monitoring
-        subject:
-            en: 'iCloud Monitoring: iCloud two step authentication error'
-        analyticsCampaign: icloud-2-step-authentication-error
     OrderCancelled:
         sender: support@pumpic.com
         senderName: Pumpic.com

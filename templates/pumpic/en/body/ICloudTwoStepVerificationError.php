@@ -9,17 +9,9 @@
     <?php endif; ?>
 </h1>
 <p style="<?= $style['paragraph'] ?>">
-    A two-factor authentication is activated for the Apple ID account of the target device. You should validate your
-    password in our system and enter a Verification Code from the target device to continue monitoring.
-    Click <a href="<?= $this->analyticsLink('https://cp.pumpic.com/profile/iCloudAccount/'.$params['link']) ?>" style="<?= $style['textLink'] ?>">here</a>
-    to set up your account and continue monitoring.
-</p>
-<p style="<?= $style['paragraph'] ?>">
-    <a href="<?= $this->analyticsLink('https://cp.pumpic.com/instructions/2factor-authentication.html') ?>" style="<?= $style['textLink'] ?>">Here</a>
-    you can find out more info how to setup Pumpic with two-factor authentication.
-</p>
-<p>
-    If you need any assistance, <a href="<?= $this->analyticsLink('https://cp.pumpic.com/support') ?>" style="<?= $style['textLink'] ?>">contact our Customer Support</a>.
+    A two-step verification is activated in the account of the target device. You should turn it off to receive data updates.
+    Please follow the link to learn more and solve the problem:
+    <a href="<?= $this->analyticsLink('https://support.apple.com/en-us/HT202664', ['term' => 'supportApple']) ?>" style="<?= $style['textLink'] ?>">https://support.apple.com/en-us/HT202664</a>
 </p>
 <?php $this->stop() ?>
 
