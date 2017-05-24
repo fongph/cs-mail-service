@@ -64,6 +64,12 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
             $this->logger->info("Do not send message '{$type}' for user #{$request->getUser()}");
             return true;
         }
+        
+        if ($this->userNotExists($request)) {
+            unset($this->db);
+            $this->logger->info("User not exists #{$request->getUser()}");
+            return true;
+        }
 
         try {
             $this->db->beginTransaction();
@@ -75,7 +81,7 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
             $this->logger->info("Message '{$type}' sended", ['result' => $result]);
 
             $this->db->commit();
-        } catch (Swift_RfcComplianceException $e) {    
+        } catch (Swift_RfcComplianceException $e) {
             $this->logger->error("Invalid email passed", ['exception' => $e]);
             $this->db->rollBack();
         } catch (\Throwable $e) {
@@ -124,6 +130,19 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
         }
 
         return true;
+    }
+
+    public function userNotExists(\CS\MailService\Request $request)
+    {
+        if ($request->getUser() == null) {
+            return false;
+        }
+
+        $user = $this->db->quote($request->getUser());
+
+        $count = $this->db->query("SELECT COUNT(*) FROM `users` WHERE `id` = {$user}")->fetchColumn();
+
+        return $count == 0;
     }
 
     public function logMailToDatabase(Request $request)
