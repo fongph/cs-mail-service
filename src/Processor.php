@@ -52,7 +52,12 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
 
         $siteSettings = Yaml::parse(file_get_contents("settings/pumpic.yml"));
 
-        $request = new Request($data, $siteSettings);
+        try {
+            $request = new Request($data, $siteSettings);
+        } catch (Exception\RequestException $e) {
+            $this->logger->error($e->getMessage(), ['exception' => $e, 'data' => $data]);
+            return true;
+        }
 
         $type = $request->getMessageType();
         $this->logger->addInfo("Message with type '{$type}' received");
@@ -64,7 +69,7 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
             $this->logger->info("Do not send message '{$type}' for user #{$request->getUser()}");
             return true;
         }
-        
+
         if ($this->userNotExists($request)) {
             unset($this->db);
             $this->logger->info("User not exists #{$request->getUser()}");

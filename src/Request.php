@@ -26,21 +26,21 @@ class Request {
         $this->locale = $siteSettings['defaultLocale'];
 
         if (!isset($data['type'])) {
-            throw new \Exception("Message type not defined");
+            throw new Exception\RequestException("Message type not defined");
         }
 
         if (!isset($data['to'])) {
-            throw new \Exception("Recipient not defined");
+            throw new Exception\RequestException("Recipient not defined");
         }
 
         if (!isset($siteSettings['templates'][$data['type']])) {
-            throw new \Exception("Template '{$data['type']}' not exists");
+            throw new Exception\RequestException("Template '{$data['type']}' not exists");
         }
 
         $templateSettings = $siteSettings['templates'][$data['type']];
 
         if (!isset($templateSettings['sender'])) {
-            throw new \Exception("Sender not defined");
+            throw new Exception\RequestException("Sender not defined");
         }
 
         if (isset($data['params'])) {
