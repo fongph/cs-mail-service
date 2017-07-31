@@ -275,7 +275,7 @@ templates:
         group: system
         subject:
             en: How is your experience with Pumpic so far?
-    3mSubscriptionUpdateReminder:
+    subscriptionUpdateReminder:
         sender: support@pumpic.com
         senderName: Pumpic.com
         group: system
