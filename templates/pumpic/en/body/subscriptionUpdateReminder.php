@@ -16,8 +16,8 @@
 <p style="<?= $style['paragraph'] ?>">We would like to inform you that <?= $params['oldProductName'] ?> is no longer available at
     Pumpic Store. For your convenience, you will be automatically switched to <?= $params['newProductName'] ?>.</p>
 
-<p style="<?= $style['paragraph'] ?>">The standard price is Standard Price <?= $params['oldProductPrice'] ?>. We highly appreciate you as our loyal
-    client and apply 10% discount to your new subscription. The final price will be Price with coupon <?= $params['newProductPrice'] ?>.</p>
+<p style="<?= $style['paragraph'] ?>">The standard price is $<?= $params['oldProductPrice'] ?>. We highly appreciate you as our loyal
+    client and apply 10% discount to your new subscription. The final price will be $<?= $params['newProductPrice'] ?>.</p>
 
 <p style="<?= $style['paragraph'] ?>">If you have questions about this change or anything else at all – please, do not
     hesitate to <a style="<?= $style['textLink'] ?>" href="mailto:support@pumpic.com">contact our Support</a>, we will gladly clear out whatever you wish to know!</p>
