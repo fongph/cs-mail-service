@@ -275,6 +275,12 @@ templates:
         group: system
         subject:
             en: How is your experience with Pumpic so far?
+    3mSubcriptionUpdateReminder:
+        sender: support@pumpic.com
+        senderName: Pumpic.com
+        group: system
+        subject:
+            en: 'Changes in Pumpic subscription: Your plan will be switched to 3 months with 10% off'
     finalReminder:
         sender: support@pumpic.com
         senderName: Pumpic.com
