@@ -11,10 +11,10 @@
 <p style="<?= $style['paragraph'] ?>">For starters, let us thank you for being with Pumpic for all this time! We value every minute of our joint
     effort to know your kid better and protect your little ones from online and offline dangers.</p>
 
-<p style="<?= $style['paragraph'] ?>">As we can see, your current subscription <?= $params['oldProductName'] ?> comes to an end. </p>
+<p style="<?= $style['paragraph'] ?>">As we can see, your current subscription <?php if ($params['doublePackage']) : ?>2 <?php endif; ?><?= $params['oldProductName'] ?> comes to an end. </p>
 
-<p style="<?= $style['paragraph'] ?>">We would like to inform you that <?= $params['oldProductName'] ?> is no longer available at
-    Pumpic Store. For your convenience, you will be automatically switched to <?= $params['newProductName'] ?>.</p>
+<p style="<?= $style['paragraph'] ?>">We would like to inform you that <?php if ($params['doublePackage']) : ?>2 <?php endif; ?><?= $params['oldProductName'] ?> is no longer available at
+    Pumpic Store. For your convenience, you will be automatically switched to <?php if ($params['doublePackage']) : ?>2 <?php endif; ?><?= $params['newProductName'] ?>.</p>
 
 <p style="<?= $style['paragraph'] ?>">The standard price is $<?= $params['oldProductPrice'] ?>. We highly appreciate you as our loyal
     client and apply 10% discount to your new subscription. The final price will be $<?= $params['newProductPrice'] ?>.</p>
