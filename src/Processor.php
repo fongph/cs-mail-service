@@ -54,6 +54,7 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
 
         try {
             $request = new Request($data, $siteSettings);
+            $this->logger->info('Request data & siteSettings ',  ['data' => $data, 'siteSettings' => $siteSettings]);
         } catch (Exception\RequestException $e) {
             $this->logger->error($e->getMessage(), ['exception' => $e, 'data' => $data]);
             return true;
@@ -139,13 +140,19 @@ class Processor implements ProcessorInterface, ConfigurableInterface {
 
     public function userNotExists(\CS\MailService\Request $request)
     {
+        $this->logger->info("request->getUser() id = " . $request->getUser());
+
         if ($request->getUser() == null) {
+            $this->logger->info("request->getUser() == null ");
+
             return false;
         }
 
         $user = $this->db->quote($request->getUser());
 
         $count = $this->db->query("SELECT COUNT(*) FROM `users` WHERE `id` = {$user}")->fetchColumn();
+
+        $this->logger->info("userNotExists count from DB " . $count);
 
         return $count == 0;
     }
